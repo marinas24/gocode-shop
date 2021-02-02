@@ -6,20 +6,21 @@
 <html lang="en">
 <body>
 <nav class="product-filter">
-    <h1>Jackets - NEW</h1>
+    <h1>Jackets</h1>
 
     <div class="sort">
       <div class="collection-sort">
         <label>Filter by:</label>
-        <select>
-          <option value="/">All Jackets</option>
+        <select >
+            <option *ngFor="let c of categories; let i = index">{{categories[i]}}</option>
+          <!-- <option value="/">All Jackets</option>
           <option value="/">2016</option>
           <option value="/">jacket</option>
           <option value="/">Jackets</option>
           <option value="/">layers</option>
           <option value="/">Obermeyer</option>
           <option value="/">Roxy</option>
-          <option value="/">womens</option>
+          <option value="/">womens</option> -->
         </select>
       </div>
 
