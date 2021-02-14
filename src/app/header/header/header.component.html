@@ -1,0 +1,27 @@
+<nav class="product-filter">
+    <h1>Products</h1>
+
+    <div class="sort">
+      <div class="collection-sort">
+        <label>Filter by:</label>
+        <select (change)="applyFilter()" [(ngModel)]="selectedCategory" >   
+            <option value="">All Categories</option>  
+            <option *ngFor="let c of categories; let i = index" [value]="c">{{c}}</option> 
+        </select>
+      </div>
+
+      <div class="collection-sort">
+        <label>Sort by:</label>
+        <select>
+          <option value="/">Featured</option>
+          <option value="/">Best Selling</option>
+          <option value="/">Alphabetically, A-Z</option>
+          <option value="/">Alphabetically, Z-A</option>
+          <option value="/">Price, low to high</option>
+          <option value="/">Price, high to low</option>
+          <option value="/">Date, new to old</option>
+          <option value="/">Date, old to new</option>
+        </select>
+      </div>
+    </div>
+  </nav>

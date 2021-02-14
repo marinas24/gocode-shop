@@ -1,0 +1,13 @@
+<section class="products" >
+    <ng-container *ngFor="let product of products">
+    <div class="product-card" *ngIf="cat === product.category || !cat">
+        <div class="product-image">
+           <img src={{product.image}} />
+        </div>
+        <div class="product-info">
+            <h5>{{product.title}}</h5>
+            <h6>{{product.price}}</h6>
+          </div>
+    </div>
+</ng-container>
+</section>
