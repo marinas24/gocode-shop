@@ -3,8 +3,8 @@
 <body>
     
 
-<app-header></app-header>
+<app-header (filterChanged)="selectedCategory=$event"></app-header>
 
-<app-products></app-products>
+<app-products [cat]="selectedCategory"></app-products>
 </body>
 </html>

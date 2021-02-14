@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-//import { PRODUCTS } from './products';
 
 @Component({
   selector: 'app-root',
@@ -8,15 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 
 export class AppComponent {
- 
-  //  groupBy = (xs:any[], key:string) => xs.reduce((rv, x) => {
-  //    (rv[x[key]] = true || []);
-  //  return rv;
-  //  }, {});
-   
-
-  //products = PRODUCTS;
- // categories = Object.keys(this.groupBy(this.products, 'category'));
+  selectedCategory: string="";
   }
 
 

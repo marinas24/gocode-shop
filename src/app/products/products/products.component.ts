@@ -7,11 +7,11 @@ import { PRODUCTS } from '../../products';
   styleUrls: ['./products.component.scss']
 })
 export class ProductsComponent implements OnInit {
-
+  @Input() cat:string="";
   constructor() { }
 
   ngOnInit(): void { }
-  @Input() cat:string="";
+  
 
   products = PRODUCTS;
 
